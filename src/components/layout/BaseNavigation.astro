@@ -3,10 +3,7 @@ interface Props {
   pageTitle?: string;
 }
 
-const navigationItems = [
-  { name: "Home", url: "/" },
-  { name: "Blog", url: "/blog/" },
-];
+const navigationItems = [{ name: "Blog", url: "/blog/" }];
 
 const socialIcons = [
   {
@@ -19,23 +16,30 @@ const socialIcons = [
     url: "https://www.twitter.com/at_the_vr",
     icon: "i-uil-twitter",
   },
+  {
+    name: "Hashnode",
+    url: "https://atthevr.hashnode.dev/",
+    icon: "i-simple-icons:hashnode",
+  },
 ];
 
 const { pageTitle } = Astro.props;
 ---
 
-<header class="border-b-4 border-black flex justify-between p-6 items-center">
+<header
+  class="border-b-4 border-black flex justify-between py-6 px-4 items-center"
+>
   {pageTitle && <h1 class="hidden">{pageTitle}</h1>}
   <a href="/" title="Back to Home">
-    <p class="righteous md:text-5xl">Atharva</p>
+    <p class="righteous text-xl md:text-5xl">Atharva</p>
   </a>
-  <nav class="hidden md:inline-block">
-    <ul class="flex gap-8 poppins">
+  <nav class="inline-block">
+    <ul class="flex gap-4 poppins">
       {
         navigationItems.map((item) => (
           <li>
             <a
-              class="text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out"
+              class="text-xl font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out"
               href={item.url}
               title={`Go to ${item.name}`}
             >
@@ -46,23 +50,18 @@ const { pageTitle } = Astro.props;
       }
       {
         socialIcons.map((item) => (
-          <li>
+          <li class="hidden md:inline-block">
             <a
               href={item.url}
               class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
               title={`'See Atharva on ${item.name}`}
             >
-              <div class:list={[item.icon, "w-6 h-6"]} />
+              <div class:list={[item.icon, "w-7 h-7"]} />
             </a>
           </li>
         ))
       }
-    </ul>
-  </nav>
-  <nav class="md:hidden flex">
-    <ul>
-      <li><a href="/blog/">Blog</a></li>
     </ul>
   </nav>
 </header>
