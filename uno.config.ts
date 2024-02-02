@@ -10,8 +10,8 @@ export default defineConfig({
     presetWind(),
     presetIcons({
       collections: {
-        logos: () =>
-          import('@iconify-json/logos/icons.json').then((i) => i.default),
+        'simple-icons': () =>
+          import('@iconify-json/simple-icons/icons.json').then((i) => i.default),
         uil: () =>
           import('@iconify-json/uil/icons.json').then((l) => l.default),
       },
