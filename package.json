@@ -1,15 +1,12 @@
 {
-  "name": "brutal",
-  "version": "1.2.0",
+  "name": "site",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "packageManager": "pnpm@8.6.0",
   "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
+    "name": "Atharva Pise"
   },
-  "homepage": "https://brutal.elian.codes",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
