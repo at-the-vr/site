@@ -12,6 +12,5 @@ const { content } = Astro.props;
     Published on {content.pubDate} by {content.author}
   </p>
   <slot />
-  <p class='text-slate'>Written by {content.author}</p>
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
 </article>
