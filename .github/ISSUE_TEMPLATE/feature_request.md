@@ -1,9 +1,9 @@
 ---
 name: Feature request
-about: Suggest an idea to Brutal
+about: Suggest an idea to this website
 title: ''
 labels: enhancement
-assignees: ElianCodes
+assignees: at-the-vr
 
 ---
 

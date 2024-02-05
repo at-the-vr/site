@@ -30,7 +30,7 @@ export const GET: APIRoute = async ({ params, props }) => {
       <div style="display: flex; flex-direction: column; justify-content: space-between; width: 100%; filter: drop-shadow()">
         <div style="display: flex; justify-content: space-between;">
           <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-            <p style="font-size: 48px;">Atharva</p>
+            <p style="font-size: 48px;">AtharvaTypes</p>
             <p style="font-size: 38px;">${title}</p>
           </div>
           <img src="https://github.com/at-the-vr/at-the-vr/assets/88548999/7472a376-44fd-4b8f-804d-5582e5898914" width="200px" height="200px" style="border: 3px solid black; border-radius: 0.5rem;" />

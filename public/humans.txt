@@ -1,6 +1,6 @@
-## Brutal Theme ##
+## AtharvaTypes ##
 
-All development & Content by Elian Van Cutsem
+All development & Content by Atharva Pise
 
-- email: hello@elian.codes
-- website: www.elian.codes
+- email: 2021PEB5208@mnit.ac.in
+- website: www.atharva.types.vercel.app

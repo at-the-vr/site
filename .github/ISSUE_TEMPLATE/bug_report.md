@@ -1,9 +1,9 @@
 ---
 name: Bug report
-about: Create a report to help improve Brutal
+about: Create a report to help improve this website
 title: ''
 labels: bug
-assignees: ElianCodes
+assignees: at-the-vr
 
 ---
 
