@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
-Host: https://atharva.types.vercel.app
-Sitemap: https://atharva.types.vercel.app/sitemap-index.xml
+Host: https://atharvatypes.vercel.app
+Sitemap: https://atharvatypes.vercel.app/sitemap-index.xml
