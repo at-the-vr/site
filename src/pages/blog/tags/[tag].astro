@@ -1,42 +1,34 @@
 ---
-import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-import Layout from '@layouts/Default.astro';
-import BlogList from '@components/blog/BlogList.astro';
-import { Button } from '@eliancodes/brutal-ui';
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import Layout from "@layouts/Default.astro";
+import BlogList from "@components/blog/BlogList.astro";
+import { Button } from "@eliancodes/brutal-ui";
 
-export async function getStaticPaths() {
-  const allPosts = await getCollection('blog').then((collection) =>
-    collection.reverse()
-  );
+const { tag } = Astro.params;
 
-  const tags: string[] = [];
-
-  allPosts.forEach((post) => {
-    post.data.tags.forEach((tag) => {
-      tags.push(tag.toLowerCase());
-    });
-  });
-
-  return Array.from(new Set(tags)).map((tag) => {
-    return {
-      params: { tag },
-      props: {
-        tag,
-        blogposts: allPosts.filter((post) =>
-          post.data.tags.map((tag) => tag.toLowerCase()).includes(tag)
-        ),
-      },
-    };
-  });
+if (tag === undefined) {
+  throw new Error("Tag is required");
 }
 
+const allPosts: CollectionEntry<"blog">[] = await getCollection("blog").then(
+  (collection) => collection.reverse()
+);
+
+const tags: string[] = [];
+
+allPosts.forEach((post) => {
+  post.data.tags.forEach((tag) => {
+    tags.push(tag.toLowerCase());
+  });
+});
+
+const blogPosts = allPosts.filter((post) =>
+  post.data.tags.map((tag) => tag.toLowerCase()).includes(tag)
+);
 interface Props {
-  tag: string;
-  blogposts: CollectionEntry<'blog'>[];
+  blogpost: CollectionEntry<"blog">;
 }
-
-const { tag, blogposts } = Astro.props;
 ---
 
 <Layout
@@ -44,10 +36,10 @@ const { tag, blogposts } = Astro.props;
   description={` AtharvaTypes Blog | All posts tagged with ${tag}`}
   pageTitle={`AtharvaTypes Blog | Blogposts tagged with ${tag}`}
 >
-  <main class='p-6 bg-purple grid gap-4'>
+  <main class="p-6 bg-purple grid gap-4">
     <div>
-      <Button href='/blog/'>&larr; Back to blog</Button>
+      <Button href="/blog/">&larr; Back to blog</Button>
     </div>
-    <BlogList posts={blogposts} />
+    <BlogList posts={blogPosts} />
   </main>
 </Layout>
