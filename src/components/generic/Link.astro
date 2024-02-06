@@ -5,10 +5,11 @@ interface Props {
   what: string;
   target?: string;
 }
-import colors from "../../colors.json";
+import { dark_colors } from "../../../colors.json";
 
 if (Astro.props.color === undefined) {
-  Astro.props.color = colors[Math.floor(Math.random() * colors.length)];
+  Astro.props.color =
+    dark_colors[Math.floor(Math.random() * dark_colors.length)];
 }
 
 const { color, where, target = "_blank", what } = Astro.props;

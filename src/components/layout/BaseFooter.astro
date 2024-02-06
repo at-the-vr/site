@@ -3,11 +3,7 @@ export interface Props {
   backToTop?: boolean;
   color?: string;
 }
-import colors from "../../../colors.json";
-
-if (Astro.props.color === undefined) {
-  Astro.props.color = colors[Math.floor(Math.random() * colors.length)];
-}
+import Link from "@components/generic/Link.astro";
 
 const { backToTop = false, color } = Astro.props;
 ---
@@ -39,23 +35,21 @@ const { backToTop = false, color } = Astro.props;
   )
 }
 
-<footer class="text-white p-6 border-t-4 border-black">
+<footer
+  class="text-black p-6 border-t-4 border-black bg-[#a78bfa] text-xl md:text-3xl"
+>
   <p class="outfit">
-    Find me in <a
-      href="https://discord.gg/astrodotbuild"
+    Find me in <Link
+      where="https://discord.gg/astrodotbuild"
       target="_blank"
-      class="text-blue">Astro Lounge</a
-    >
+      what="Astro Lounge ↗"
+    />
   </p>
 </footer>
 
-<style define:vars={{ color: color }}>
+<style>
   .backToTop.active {
     opacity: 1;
-  }
-
-  footer {
-    background-color: var(--color);
   }
 </style>
 
