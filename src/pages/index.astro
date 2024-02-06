@@ -2,10 +2,9 @@
 import Layout from "@layouts/Default.astro";
 import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
 import MobileSocials from "@components/home/MobileSocials.astro";
-import { Button } from "@eliancodes/brutal-ui";
 import { Pill } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
-import Link from "@components/Link.astro";
+import Link from "@components/generic/Link.astro";
 
 const myInterests = [
   { name: "Astro", url: "https://astro.build/" },
@@ -31,7 +30,7 @@ const myInterests = [
       <div class="flex flex-col md:col-span-6">
         <Card>
           <div class="flex flex-col justify-between items-start gap-4">
-            <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl hover:text-green transition-colors duration-300">
+            <p class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
               &lt; TODO /&gt;
             </p>
             <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
@@ -51,7 +50,6 @@ const myInterests = [
               <Link
                 where="https://convelations.vercel.app/"
                 what="Convelations"
-                color="#fb7185"
               />
             </p>
             <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
@@ -60,9 +58,6 @@ const myInterests = [
                 what="My custom CLI Portfolio"
               />
             </p>
-            <Button target={"_self"} href="/blog/">
-              Check out the blog &rarr;
-            </Button>
           </div>
         </Card>
       </div>
