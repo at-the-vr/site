@@ -1,19 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '@layouts/Default.astro';
-import BlogList from '@components/blog/BlogList.astro';
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Default.astro";
+import BlogList from "@components/blog/BlogList.astro";
 
-const posts = await getCollection('blog').then((collection) =>
+const posts = await getCollection("blog").then((collection) =>
   collection.reverse()
 );
 ---
 
 <Layout
-  title='Blog'
-  description='Atharva Types | On this page you can find a collection of blogposts revolving around Atharva and sometimes Technology'
-  pageTitle='Atharva Types | Blog'
+  title="Blog"
+  description="Atharva Types | On this page you can find a collection of blogposts revolving around Atharva and sometimes Technology"
+  pageTitle="Atharva Types | Blog"
 >
-  <main class='bg-green p-6'>
+  <main class="bg-green p-6">
     <BlogList posts={posts} />
   </main>
 </Layout>

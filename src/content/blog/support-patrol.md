@@ -1,6 +1,6 @@
 ---
 title: Joining Support Patrol Squad
-pubDate: 21/01/2024 14:25
+pubDate: 01/07/2024 14:25
 author: "Atharva Pise"
 tags:
   - Support
@@ -15,13 +15,17 @@ layout: "../../layouts/BlogPost.astro"
 
 Last week I received a DM from [Otterlord](https://otterlord.dev/) telling me that I am invited to join the **@support-patrol** role in [Astro Lounge](https://discord.gg/astrodotbuild). This is a significant achievement for myself including my weekly translation PRs to Astro Docs & Starlight.
 
+## How did that happened 🤓
+
+Simply put: *I just showed up whenever there was an Issue faced by any member in Astro Lounge*. That's what I have been doing over past couple of months. Half of the time I don't even have the clue about the Issue, I simply google or [Docs](https://docs.astro.build/en/getting-started/) my way till I find the fix or someone fixes it before me.
+
 ## Perks 💪
 
 Do I get to kick people? Do I get to mute people? Do I get to ban people? **NO**. The only perk important for any member to know is *@support-patrol* have a high trust factor. Any advice/suggestion from such folks can be carried out to diagnose their queries be it in Astro or any technology.
 
 ![otterlord congratulating sphere and atharva for joining support patrol](../../assets/congratulation-support-patrol.jpg)
 
-## What Now 🤔
+## What's Next 🚴‍♂️
 
 *@support-patrol* is a milestone and I want to learn more about Astro. Every week I get to experience something different, something that I haven't faced in a large scale project. Their are repositories that I want to explore & contribute to. Discussions I want to participate, Issues I want to fix. So many things...
 
