@@ -14,15 +14,16 @@ const width = 1200;
 
 const posts = await getCollection("blog");
 
-export const GET: APIRoute = async ({ params }) => {
-  const post = posts.find((p) => p.slug === params.slug);
+export function getStaticPaths() {
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { title: post.data.title, description: post.data.description },
+  }));
+}
 
-  if (!post) {
-    return new Response("Post not found", { status: 404 });
-  }
-
-  const title = post.data.title.trim() ?? "Blogpost";
-  const description = post.data.description ?? null;
+export const GET: APIRoute = async ({ params, props }) => {
+  const title = props.title.trim() ?? "Blogpost";
+  const description = props.description ?? null;
   const html = toReactElement(`
   <div style="background-color: white; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
     <div style="display:flex; height: 100%; width: 100%; background-color: white; border: 6px solid black; border-radius: 0.5rem; padding: 2rem; filter: drop-shadow(6px 6px 0 rgb(0 0 0 / 1));">
