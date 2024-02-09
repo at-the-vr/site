@@ -4,13 +4,16 @@ interface Props {
 }
 
 const { content } = Astro.props;
+const formattedDate = new Date(content.pubDate).toLocaleDateString("en-GB", {
+  timeZone: "UTC",
+});
 ---
 
-<article class='prose-slate w-sm md:w-prose md:prose poppins'>
-  <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
-  <p class='text-slate text-sm md:text-base'>
-    Published on {content.pubDate} by {content.author}
+<article class="prose-slate w-sm md:w-prose md:prose poppins">
+  <a href="/blog/" title="Back to blog">&larr; Back to blog</a>
+  <p class="text-slate text-sm md:text-base">
+    Published on {formattedDate} by {content.author}
   </p>
   <slot />
-  <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
+  <a href="/blog/" title="Back to blog">&larr; Back to blog</a>
 </article>

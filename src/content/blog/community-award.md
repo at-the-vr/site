@@ -1,6 +1,6 @@
 ---
 title: Winning a Community Award
-pubDate: 12/01/2023 10:45
+pubDate: 2023-12-01
 author: "Atharva Pise"
 tags:
   - Astro

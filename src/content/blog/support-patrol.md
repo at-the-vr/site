@@ -1,6 +1,6 @@
 ---
 title: Joining Support Patrol Squad
-pubDate: 01/07/2024 14:25
+pubDate: 2024-01-07
 author: "Atharva Pise"
 tags:
   - Support
