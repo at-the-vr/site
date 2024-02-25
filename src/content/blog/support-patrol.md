@@ -15,6 +15,8 @@ layout: "../../layouts/BlogPost.astro"
 
 Last week I received a DM from [Otterlord](https://otterlord.dev/) telling me that I am invited to join the **@support-patrol** role in [Astro Lounge](https://discord.gg/astrodotbuild). This is a significant achievement for myself including my weekly translation PRs to Astro Docs & Starlight.
 
+![otterlord congratulating sphere and atharva for joining support patrol](../../assets/congratulation-support-patrol.jpg)
+
 ## How did that happened 🤓
 
 Simply put: *I just showed up whenever there was an Issue faced by any member in Astro Lounge*. That's what I have been doing over past couple of months. Half of the time I don't even have the clue about the Issue, I simply google or [Docs](https://docs.astro.build/en/getting-started/) my way till I find the fix or someone fixes it before me.
@@ -22,8 +24,6 @@ Simply put: *I just showed up whenever there was an Issue faced by any member in
 ## Perks 💪
 
 Do I get to kick people? Do I get to mute people? Do I get to ban people? **NO**. The only perk important for any member to know is *@support-patrol* have a high trust factor. Any advice/suggestion from such folks can be carried out to diagnose their queries be it in Astro or any technology.
-
-![otterlord congratulating sphere and atharva for joining support patrol](../../assets/congratulation-support-patrol.jpg)
 
 ## What's Next 🚴‍♂️
 

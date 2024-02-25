@@ -32,7 +32,7 @@ Support Squad is an opt-in role in Astro Lounge that focuses on helping members 
 
 ### Starlight 🌟
 
-[Starlight](https://starlight.astro.build/) is the next-gen Documentation theme with a blazingly fast ⚡ performance and accessible solutions thanks to being built on top of Astro. Needless to say, I contribute here as well, primarily with translations but sometimes I get into Issues and Discussions as well. It's an amazing theme and I have a couple of projects running on Starlight.
+[Starlight](https://starlight.astro.build/) is the next-gen Documentation theme with a blazingly fast ⚡ performance and accessible solutions thanks to being built on top of Astro. Needless to say, I contribute here as well, primarily with translations but sometimes I get into Issues and Discussions as well. It's an amazing theme and I highly recommend it to anyone interested in Documentations.
 
 ### Pheww that was a lot 💬
 
