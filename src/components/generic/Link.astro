@@ -2,10 +2,10 @@
 interface Props {
   where: string;
   what: string;
-  target?: string;
+  target?: "_self" | "_blank";
 }
 
-const { where, target = "_blank", what } = Astro.props;
+const { where, target = "_self", what } = Astro.props;
 ---
 
 <a

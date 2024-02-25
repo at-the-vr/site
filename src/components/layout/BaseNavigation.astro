@@ -55,8 +55,9 @@ const { pageTitle } = Astro.props;
               href={item.url}
               class="hover:text-green hover:underline transition-all duration-150 ease-in-out"
               target="_blank"
-              title={`'See Atharva on ${item.name}`}
+              title={`See Atharva on ${item.name}`}
             >
+            <span class="sr-only">{`See Atharva on ${item.name}`}</span>
               <div class:list={[item.icon, "w-7 h-7"]} />
             </a>
           </li>
