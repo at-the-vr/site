@@ -4,7 +4,6 @@ import RecentBlogPosts from "@components/generic/RecentBlogPosts.astro";
 import MobileSocials from "@components/home/MobileSocials.astro";
 import { Pill } from "@eliancodes/brutal-ui";
 import { Card } from "@eliancodes/brutal-ui";
-import Link from "@components/generic/Link.astro";
 import { Image } from "astro:assets";
 import headshot from "../assets/atharva-headshot.jpg";
 
@@ -41,28 +40,30 @@ const myInterests = [
             </p>
             <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
               <span class="text-white">#</span>Translating
-              <Link
-                where="https://docs.astro.build/hi/getting-started/"
-                what="Astro Docs"
-              />
+              <a
+                href="https://docs.astro.build/hi/getting-started/"
+                class="hover:color-white transition-colors">Astro Docs</a
+              >
               <span>&</span>
-              <Link
-                where="https://starlight.astro.build/hi/"
-                what="Starlight Docs"
-              />
+              <a
+                href="https://starlight.astro.build/hi/"
+                class="hover:color-white transition-colors">Starlight</a
+              >
             </p>
             <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
               <span class="text-white">#</span> Writing
-              <Link
-                where="https://convelations.vercel.app/"
-                what="Convelations"
-              />
+              <a
+                href="https://convelations.vercel.app/"
+                class="hover:color-white transition-colors">Convelations</a
+              >
             </p>
             <p class="mt-2 outfit text-xl md:text-3xl lg:text-5xl">
-              <span class="text-white">#</span> Designing <Link
-                where="https://www.npmjs.com/package/who-atharva"
-                what="My custom CLI Portfolio"
-              />
+              <span class="text-white">#</span> Designing
+              <a
+                href="https://github.com/at-the-vr/my-cli-portfolio"
+                class="hover:color-white transition-colors"
+                >My custom CLI Portfolio</a
+              >
             </p>
           </div>
         </Card>
@@ -87,7 +88,7 @@ const myInterests = [
                 <li>
                   <Pill>
                     <a
-                      class="sanchez p-3"
+                      class="sanchez p-3 text-[16px]"
                       href={item.url}
                       target="_blank"
                       title={`Go to ${item.name}`}
@@ -105,19 +106,19 @@ const myInterests = [
         <h2 class="text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif">
           Who am I?
         </h2>
-        <p class="poppins">
+        <p class="poppins text-lg">
           Hi, I’m Atharva, a frontend enthusiast & a documentation fanatic
           currently looking for new opportunities in frontend engineering. I am
           passionate for developing seamless accessible UIs benefittable in the
           society
         </p>
-        <p class="poppins mt-2">
+        <p class="poppins mt-2 text-lg">
           Nowadays you can find me roaming in <a
             href="https://astro.build/chat"
             class="hover:text-white">Astro Lounge</a
           > or on GitHub building some random sh*t
         </p>
-        <p class="poppins mt-2">
+        <p class="poppins mt-2 text-lg">
           I possess industrial internship experience of 11 Months in VueJs where
           I was primarily designing as you guesssed User Interfaces 😁, Since
           then I have moved to Astro and NextJs. I'm open to discussing any

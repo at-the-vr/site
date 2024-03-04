@@ -3,7 +3,6 @@ export interface Props {
   backToTop?: boolean;
   color?: string;
 }
-import Link from "@components/generic/Link.astro";
 
 const { backToTop = false, color } = Astro.props;
 ---
@@ -39,11 +38,12 @@ const { backToTop = false, color } = Astro.props;
   class="text-black p-6 border-t-4 border-black bg-[#a78bfa] text-xl md:text-3xl"
 >
   <p class="outfit">
-    Find me in <Link
-      where="https://discord.gg/astrodotbuild"
+    Find me in
+    <a
+      href="https://discord.gg/astrodotbuild"
       target="_blank"
-      what="Astro Lounge ↗"
-    />
+      class="hover:color-white transition-colors">Astro Lounge ↗</a
+    >
   </p>
 </footer>
 
